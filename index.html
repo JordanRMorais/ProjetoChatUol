@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat | UOL</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=send" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=group" />
 </head>
 <body>
 <section class="container">
     <header class="barra-topo">
         <img src="images/logo-uol.png">
-        <button>   
+        <button onclick="exibirMenu()">   
             <span class="material-symbols-outlined">
                 group
             </span>
@@ -32,29 +31,35 @@
             </button>
         </form>
     </footer>
-    <div class="overlay">
-    <section class="menu">
-        <h1>Escolha um contato para enviar mensagem</h1>
-        <button>
-            <span class="material-symbols-outlined">
-                group
-            </span>
-            Todos 
-        </button>
-        <button>
-            <span class="material-symbols-outlined">
-                group
-            </span>
-            Todos 
-        </button>        <button>
-            <span class="material-symbols-outlined">
-                group
-            </span>
-            Todos 
-        </button>
-        <h1>Escolha a visibilidade</h1>
-
-
+    <div class="overlay visivel">
+        <section class="menu">
+            <h1>Escolha um contato para enviar mensagem:</h1>
+            <div class="destinatario">
+                
+                <button class="botao">
+                <span class="material-symbols-outlined">
+                    group
+                </span>
+                <p>Todos</p> 
+                </button>
+            </div> 
+            <h1>Escolha a visibilidade:</h1>
+            <div class="visibilidade">  
+            
+                <button class="botao">
+                    <span class="material-symbols-outlined">
+                        lock_open
+                        </span>
+                        <p>Público</p>
+                </button>
+                <button class="botao">
+                    <span class="material-symbols-outlined">
+                        lock
+                        </span>
+                    <p>Reservadamente</p>
+                </button>
+            </div>
+        </section>
     </div>
 
 
