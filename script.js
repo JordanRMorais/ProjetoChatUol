@@ -1,1 +1,1 @@
-prompt("Qual o seu nome?");
+// prompt("Qual o seu nome?");
