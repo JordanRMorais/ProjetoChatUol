@@ -41,18 +41,52 @@ header img {
     height: 50px;
 }
 
-.chat_mensagens {
+.chat {
     background-color:#F3f3f3;
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 90px;
+    padding-top: 20px;
              
 }
 
+.mensagem_normal {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+    font-size: 14px;
+    font-family: "Roboto", serif;;
+
+}
+.mensagem_reservada {
+    width: 100%;
+    background-color: rgba(255, 222, 222, 1);
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+    font-size: 14px;
+    font-family: "Roboto", serif;
+}
+
+.mensagem_status {
+    width: 100%;
+    background-color: rgba(220, 220, 220, 1);
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+    font-size: 14px;
+    font-family: "Roboto", serif;
+
+}
 
 footer form { 
     position: fixed;
     bottom: 0;
-    left: 0;
     width: 100%;
     max-width: 430px;
     height: 80px;
@@ -76,6 +110,9 @@ footer input {
     border: none;
     outline: none;
     width: 80%;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 400;
 } 
 
 .overlay {
@@ -109,7 +146,6 @@ footer input {
     padding-left: 20px;
     
    
-   
 }
 
 .menu > h1 {
@@ -137,7 +173,7 @@ footer input {
     cursor: pointer;
 } 
 
-.destinatario {
+.destinatarios {
     display: flex;
     flex-direction: column;
     padding-top: 20px;
