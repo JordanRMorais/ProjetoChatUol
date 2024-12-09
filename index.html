@@ -22,13 +22,13 @@
     </header>
     <section class="chat">
     <div class="mensagem_normal">
-        Mensagem enviada
+        
     </div>
     <div class="mensagem_reservada">
-        Recebida
+        
     </div>
     <div class="mensagem_status">
-        Entrou na Sala
+          
     </div>
     </section>
     <footer class="enviar_mensagens">
@@ -45,27 +45,24 @@
         <section class="menu">
             <h1>Escolha um contato para enviar mensagem:</h1>
             <div class="destinatarios">
-               <button class="botao">
-                    <span class="material-symbols-outlined">
-                        group
-                    </span>
-                    <p>Todos</p> 
+                <button class="botao" onclick="selecionarDestinatario('Todos')">
+                    <span class="material-symbols-outlined">group</span>
+                    <p>Todos</p>
+                    <span class="check-icon material-symbols-outlined hidden">check</span>
                 </button>
-            </div> 
-            <h1>Escolha a visibilidade:</h1>
-            <div class="visibilidade">  
+                <!-- Botões dos participantes -->
+            </div>
             
-                <button class="botao">
-                    <span class="material-symbols-outlined">
-                        lock_open
-                        </span>
-                        <p>Público</p>
+            <div class="visibilidade">
+                <button class="botao" onclick="selecionarVisibilidade('message')">
+                    <span class="material-symbols-outlined">lock_open</span>
+                    <p>Público</p>
+                    <span class="check-icon material-symbols-outlined hidden">check</span>
                 </button>
-                <button class="botao">
-                    <span class="material-symbols-outlined">
-                        lock
-                        </span>
-                    <p>Reservadamente</p>
+                <button class="botao" onclick="selecionarVisibilidade('private_message')">
+                    <span class="material-symbols-outlined">lock</span>
+                    <p>Reservado</p>
+                    <span class="check-icon material-symbols-outlined hidden">check</span>
                 </button>
             </div>
         </section>
@@ -75,7 +72,7 @@
     </section>
 </section>
 
-
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
